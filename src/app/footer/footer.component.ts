@@ -6,6 +6,7 @@ import { Input,Output,EventEmitter, Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  footer_type: string = "All";
   @Input() todos: any[];
   @Output() clearCompleted = new EventEmitter<any>();
   constructor() { }
